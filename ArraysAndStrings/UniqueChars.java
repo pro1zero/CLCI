@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 // Ask if string is ASCII or Unicode.
 // assuming the string is only lowercase a-z as I'm using bitVector
+// Ask if an empty string is a valid case for unique chars
 public class UniqueChars{
     public static boolean hasUniqueCharsNestedLoop(String s){
+        // O(N^2) Time | O(1) Space
         checkStringValidity(s);
 
         for (int i = 0; i < s.length(); i++){
@@ -19,6 +21,8 @@ public class UniqueChars{
     }
 
     public static boolean hasUniqueCharsSingleLoop(String s){
+        // O(N) Time | O(1) Space
+
         checkStringValidity(s);
 
         int bitVector = 0;
@@ -34,6 +38,8 @@ public class UniqueChars{
     }
 
     public static boolean hasUniqueCharsUsingSorting(String s){
+        // O(NlogN) Time | O(N) Space - array
+
         checkStringValidity(s);
 
         char[] array = s.toCharArray();
@@ -54,7 +60,7 @@ public class UniqueChars{
     }
 
     public static void checkStringValidity(String s){
-        if (s == null || s.isEmpty()){
+        if (s == null){
             throw new IllegalArgumentException("Input string cannot be null or empty");
         }
     }
