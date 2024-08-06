@@ -1,8 +1,11 @@
 import ArraysAndStrings.*;
 public class Main {
     public static void main(String[] args) {
+        // 6. Compress String
+        System.out.println(CompressString.compressString("aabbccddee"));
+
         // 5. OneAway
-        System.out.println(OneAway.isOneAway("pale", "ple"));
+        // System.out.println(OneAway.isOneAway("pale", "ple"));
 
         // 4. Palindrome Permutation
         // System.out.println(PermutationPalindrome.hasPalindromePermutationUsingMap("ca f f a"));
