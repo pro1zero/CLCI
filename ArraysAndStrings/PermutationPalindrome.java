@@ -25,6 +25,11 @@ public class PermutationPalindrome {
     }
 
     public static boolean hasPalindromePermutationUsingToggleAndOperation(String s){
+        // Same complexity as the above method just an elegant way of check if there are
+        // more than 1 bits set to 1.
+
+        // subtract with 1 and do AND operation with the original bitVector - if that's zero
+        // then only 1 bit was set to 1 and return true else return false.
         int bitVector = 0;
         for(int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
