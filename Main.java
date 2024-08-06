@@ -1,9 +1,12 @@
 import ArraysAndStrings.*;
 public class Main {
     public static void main(String[] args) {
+        // 5. OneAway
+        System.out.println(OneAway.isOneAway("pale", "ple"));
+
         // 4. Palindrome Permutation
-//        System.out.println(PermutationPalindrome.hasPalindromePermutationUsingMap("ca f f a"));
-        System.out.println(PermutationPalindrome.hasPalindromePermutationUsingToggleAndOperation("racecar"));
+        // System.out.println(PermutationPalindrome.hasPalindromePermutationUsingMap("ca f f a"));
+        // System.out.println(PermutationPalindrome.hasPalindromePermutationUsingToggleAndOperation("racecar"));
 
 
         // 3. URLify
