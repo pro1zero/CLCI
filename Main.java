@@ -1,8 +1,11 @@
 import ArraysAndStrings.*;
 public class Main {
     public static void main(String[] args) {
+        // 9. String Rotation
+        System.out.println(StringRotation.stringRotation("erbottlewat", "waterbottle"));
+
         // 8. Zero Matrix
-        ZeroMatrix.zeroMatrixEfficient(new int[][] {{1, 5, 0, 7}, {2, 9, 1, 7}, {5, 0, 5, 5}, {0, 0, 6, 3}});
+//        ZeroMatrix.zeroMatrixEfficient(new int[][] {{1, 5, 0, 7}, {2, 9, 1, 7}, {5, 0, 5, 5}, {0, 0, 6, 3}});
 
         // 7. Rotate Matrix In-place
 //        RotateMatrix.rotateMatrix(new int[][] {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}});
