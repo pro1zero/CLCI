@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class ZeroMatrix {
     public static void zeroMatrix(int[][] nums){
+        // Time: O(N^2) as if there are too many zeroes we don't go and populate columns at every element.
+        // Worst case could be checking that for every element, thus O(N^2)
+        // Space: O(1) as we don't use any extra space.
         for(int i = 0; i < nums.length; i++){
             for(int j = 0; j < nums[i].length; j++){
                 if (nums[i][j] == 0){
@@ -26,6 +29,8 @@ public class ZeroMatrix {
     }
 
     public static void zeroMatrixEfficient(int[][] nums){
+        // Time: O(N) where N is the total number of elements in the matrix
+        // Space: O(1) as we don't use any extra space here.
         boolean firstRowHasZero = false;
         boolean firstColHasZero = false;
 
