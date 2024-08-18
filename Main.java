@@ -1,12 +1,26 @@
 import ArraysAndStrings.*;
+import LinkedLists.InterweavingLinkedLists;
+import LinkedLists.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
         // LINKED LISTS
-
+//        Setup
+        LinkedList ll1 = new LinkedList();
+        ll1.add(1);
+        ll1.add(2);
+        LinkedList.Node l1 = ll1.add(3);
+        LinkedList ll2 = new LinkedList();
+        ll2.add(4);
+        ll2.add(5);
+        LinkedList.Node l2 = ll2.add(6);
+//        InterweavingLinkedLists.interweavingLLs(l1, l2);
+        InterweavingLinkedLists.interweavingLLsEfficient(l1, l2);
+//        0. Interweaving LLs
 
 
         // 9. String Rotation
-        System.out.println(StringRotation.stringRotation("erbottlewat", "waterbottle"));
+//        System.out.println(StringRotation.stringRotation("erbottlewat", "waterbottle"));
 
         // 8. Zero Matrix
 //        ZeroMatrix.zeroMatrixEfficient(new int[][] {{1, 5, 0, 7}, {2, 9, 1, 7}, {5, 0, 5, 5}, {0, 0, 6, 3}});
