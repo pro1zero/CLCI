@@ -21,6 +21,13 @@ public class LinkedList {
         return head;
     }
 
+    public static void print(Node head){
+        while(head != null){
+            System.out.println(head.value);
+            head = head.next;
+        }
+    }
+
     public static class Node{
         public Node next;
         public int value;

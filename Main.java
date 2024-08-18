@@ -1,6 +1,7 @@
 import ArraysAndStrings.*;
 import LinkedLists.InterweavingLinkedLists;
 import LinkedLists.LinkedList;
+import LinkedLists.RemoveDups;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,14 +10,19 @@ public class Main {
         LinkedList ll1 = new LinkedList();
         ll1.add(1);
         ll1.add(2);
-        LinkedList.Node l1 = ll1.add(3);
+        ll1.add(1);
+        LinkedList.Node l1 = ll1.add(2);
         LinkedList ll2 = new LinkedList();
         ll2.add(4);
         ll2.add(5);
         LinkedList.Node l2 = ll2.add(6);
-//        InterweavingLinkedLists.interweavingLLs(l1, l2);
-        InterweavingLinkedLists.interweavingLLsEfficient(l1, l2);
+//        1. Remove dups
+//        RemoveDups.removeDupsUsingSet(l1);
+        RemoveDups.deleteDupsNested(l1);
+
 //        0. Interweaving LLs
+//        InterweavingLinkedLists.interweavingLLs(l1, l2);
+//        InterweavingLinkedLists.interweavingLLsEfficient(l1, l2);
 
 
         // 9. String Rotation
