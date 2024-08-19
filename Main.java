@@ -1,8 +1,5 @@
 import ArraysAndStrings.*;
-import LinkedLists.InterweavingLinkedLists;
-import LinkedLists.KthtoLast;
-import LinkedLists.LinkedList;
-import LinkedLists.RemoveDups;
+import LinkedLists.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +14,9 @@ public class Main {
         ll2.add(4);
         ll2.add(5);
         LinkedList.Node l2 = ll2.add(6);
+
+//        3.DeleteAMiddleNode
+        DeleteAMiddleNode.deleteMiddleNode(l1);
 
 //        2. Kth to last elements
         System.out.println(KthtoLast.kthToLast(l1, 1));

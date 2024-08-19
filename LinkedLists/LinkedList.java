@@ -22,9 +22,10 @@ public class LinkedList {
     }
 
     public static void print(Node head){
-        while(head != null){
-            System.out.println(head.value);
-            head = head.next;
+        Node temp = head;
+        while(temp != null){
+            System.out.println(temp.value);
+            temp = temp.next;
         }
     }
 
