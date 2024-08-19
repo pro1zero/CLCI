@@ -1,5 +1,6 @@
 import ArraysAndStrings.*;
 import LinkedLists.InterweavingLinkedLists;
+import LinkedLists.KthtoLast;
 import LinkedLists.LinkedList;
 import LinkedLists.RemoveDups;
 
@@ -10,15 +11,18 @@ public class Main {
         LinkedList ll1 = new LinkedList();
         ll1.add(1);
         ll1.add(2);
-        ll1.add(1);
-        LinkedList.Node l1 = ll1.add(2);
+        ll1.add(3);
+        LinkedList.Node l1 = ll1.add(4);
         LinkedList ll2 = new LinkedList();
         ll2.add(4);
         ll2.add(5);
         LinkedList.Node l2 = ll2.add(6);
+
+//        2. Kth to last elements
+        System.out.println(KthtoLast.kthToLast(l1, 1));
 //        1. Remove dups
 //        RemoveDups.removeDupsUsingSet(l1);
-        RemoveDups.deleteDupsNested(l1);
+//        RemoveDups.deleteDupsNested(l1);
 
 //        0. Interweaving LLs
 //        InterweavingLinkedLists.interweavingLLs(l1, l2);
