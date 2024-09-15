@@ -6,20 +6,25 @@ public class Main {
         // LINKED LISTS
 //        Setup
         LinkedList ll1 = new LinkedList();
-        ll1.add(1);
-        ll1.add(2);
+        ll1.add(8);
+        ll1.add(5);
         ll1.add(3);
+        ll1.add(1);
+        ll1.add(10);
         LinkedList.Node l1 = ll1.add(4);
         LinkedList ll2 = new LinkedList();
         ll2.add(4);
         ll2.add(5);
         LinkedList.Node l2 = ll2.add(6);
+//        4. Partition LL
+//        Partition.partitionLLUsingTreeSet(l1, 5);
+        Partition.partitionLLEfficient(l1, 5);
 
 //        3.DeleteAMiddleNode
-        DeleteAMiddleNode.deleteMiddleNode(l1);
+//        DeleteAMiddleNode.deleteMiddleNode(l1);
 
 //        2. Kth to last elements
-        System.out.println(KthtoLast.kthToLast(l1, 1));
+//        System.out.println(KthtoLast.kthToLast(l1, 1));
 //        1. Remove dups
 //        RemoveDups.removeDupsUsingSet(l1);
 //        RemoveDups.deleteDupsNested(l1);
