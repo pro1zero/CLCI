@@ -8,14 +8,17 @@ public class Main {
         ll1.add(7);
         ll1.add(1);
         ll1.add(1);
-        LinkedList.Node l1 = ll1.add(3);
+        LinkedList.Node l1 = ll1.add(7);
         LinkedList ll2 = new LinkedList();
         ll2.add(6);
         ll2.add(1);
         LinkedList.Node l2 = ll2.add(7);
 
+//        6. Palindrome
+        System.out.println(Palindrome.isPalindromeUsingRunnerTechnique(l1));
+
 //        5. Sum Lists
-        SumLists.sumListsForward(l1, l2);
+//        SumLists.sumListsForward(l1, l2);
 //        SumLists.sumLists(l1, l2);
 
 //        4. Partition LL
