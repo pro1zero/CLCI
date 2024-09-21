@@ -4,7 +4,8 @@ import java.util.Stack;
 
 public class Palindrome {
     public static boolean isPalindromeUsingRunnerTechnique(LinkedList.Node head){
-//        1 -> 2 -> 3 -> 4 -> 5
+        //Time - O(N) as we traverse the LL exactly once using the slow pointer.
+        //Space - O(N) as the stack size could grow to N/2.
         if (head == null) throw new IllegalArgumentException();
         if (head.next == null) return true;
         Stack<Integer> stack = new Stack<>();
