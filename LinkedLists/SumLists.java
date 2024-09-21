@@ -3,8 +3,10 @@ package LinkedLists;
 import java.util.List;
 
 public class SumLists {
-
+// sum lists forward IMPL is still yet to be done. Cover back this topic after
+// doing recursion topic.
     public static LinkedList.Node result = new LinkedList.Node(-1);
+    public static int carry = 0;
     public static void sumLists(LinkedList.Node l1, LinkedList.Node l2){
         LinkedList.Node result = new LinkedList.Node(-1), current = result;
         int carry = 0;
@@ -27,6 +29,8 @@ public class SumLists {
     }
 
     public static void sumListsForward(LinkedList.Node l1, LinkedList.Node l2){
+        if (l1 == null || l2 == null) throw new IllegalArgumentException();
+
         LinkedList.Node current1 = l1, current2 = l2;
 
         int length1 = lengthOfLinkedList(current1);
@@ -38,15 +42,25 @@ public class SumLists {
             l1 = padList(current1, length2 - length1);
         }
 
-        addListHelper(l1, l2, 0);
+        current1 = l1;
+        addListHelper(l1, l2, carry);
+
+        LinkedList.Node carryNode = new LinkedList.Node(carry);
+        if(carry > 0){
+
+            carryNode.next = current1;
+        }
+        LinkedList.print(carryNode);
     }
 
-    public static void addListHelper(LinkedList.Node l1, LinkedList.Node l2, int carry){
+    public static int addListHelper(LinkedList.Node l1, LinkedList.Node l2, int carry){
         if (l1.next != null){
-            addListHelper(l1.next, l2.next, carry);
+            return addListHelper(l1.next, l2.next, carry);
         }
         int sum = l1.value + l2.value + carry;
-
+        l1.value = sum % 10;
+        carry = sum / 10;
+        return carry;
     }
 
     public static LinkedList.Node padList(LinkedList.Node head, int padding){
