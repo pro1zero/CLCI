@@ -14,8 +14,10 @@ public class Main {
         ll2.add(1);
         LinkedList.Node l2 = ll2.add(7);
 
+//        7. IntersectingNodes
+
 //        6. Palindrome
-        System.out.println(Palindrome.isPalindromeUsingRunnerTechnique(l1));
+//        System.out.println(Palindrome.isPalindromeUsingRunnerTechnique(l1));
 
 //        5. Sum Lists
 //        SumLists.sumListsForward(l1, l2);
